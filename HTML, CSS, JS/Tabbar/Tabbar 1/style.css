@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+}
+
+.tabbar {
+    position: relative;
+    width: 400px;
+    height: 80px;
+}
+
+.tabbar ul {
+    display: flex;
+}
+
+.tabbar ul li {
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.tabbar ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+.tabbar ul li a .icon {
+    line-height: 80px;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.tabbar ul li a .text {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    bottom: 14px;
+    transition: 0.5s;
+    transform: scale(0);
+}
+
+.tabbar ul li.active a .icon {
+    font-size: 24px;
+    transform: translateY(-10px);
+}
+
+.tabbar ul li.active a .text {
+    transform: scale(1);
+}
+
+.active-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--c);
+    box-shadow: 0 10px 15px var(--cc);
+    transition: 0.5s;
+}
+
+.tabbar ul li:nth-child(1).active ~ .active-bg {
+    --c: #ffa502;
+    --cc: #ffa50299;
+    left: 0;
+}
+
+.tabbar ul li:nth-child(2).active ~ .active-bg {
+    --c: #ff6348;
+    --cc: #ff634899;
+    left: calc(1 * 80px);
+}
+
+.tabbar ul li:nth-child(3).active ~ .active-bg {
+    --c: #2ed573;
+    --cc: #2ed57399;
+    left: calc(2 * 80px);
+}
+
+.tabbar ul li:nth-child(4).active ~ .active-bg {
+    --c: #1e90ff;
+    --cc: #1e90ff99;
+    left: calc(3 * 80px);
+}
+
+.tabbar ul li:nth-child(5).active ~ .active-bg {
+    --c: #ff6b81;
+    --cc: #ff6b8199;
+    left: calc(4 * 80px);
+}
