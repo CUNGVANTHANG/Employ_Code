@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(200deg, #72afd3, #96fbc4);
+}
+
+.login-box {
+    position: relative;
+    width: 320px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box input {
+    height: 40px;
+    border-radius: 3px;
+    text-indent: 15px;
+    outline: none;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.input-box input:focus {
+    outline: 1px solid lightseagreen;
+}
+
+.input-box button {
+    border: none;
+    height: 45px;
+    background-color: lightseagreen;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.owl {
+    width: 211px;
+    height: 108px;
+    background: url("./owl.png");
+    background-repeat: no-repeat;
+    position: relative;
+}
