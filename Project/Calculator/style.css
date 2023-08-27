@@ -2,7 +2,6 @@
     --text: #000;
     --screen: #fff;
     --calc: #fff;
-    --theme: #000;
 }
 
 * {
@@ -13,51 +12,30 @@
 
 body {
     height: 100vh;
-    background-color: #e1e1e1;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #e5e5e5;
 }
 
 .container {
     position: relative;
-    background-color: #fff;
     width: 414px;
     border-radius: 20px;
     overflow: hidden;
+    background-color: var(--screen);
 }
 
-.info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 40px;
-}
-
-.name {
-    color: var(--text);
-    font-size: 30px;
-}
-
-.theme {
-    border: 0;
-    outline: 0;
+.name-app {
+    position: absolute;
+    top: 15px;
+    left: 40px;
     font-size: 24px;
-    color: var(--theme);
-    background-color: #fff;
-}
-
-.theme i {
-    display: none;
-}
-
-.theme .active {
-    display: block;
+    font-weight: bold;
 }
 
 .screen {
     padding: 60px 40px;
-    background-color: var(--screen);
 }
 
 .screen-calculation, 
@@ -85,8 +63,6 @@ body {
     justify-content: center;
 }
 
-/* #36474f */
-
 .calc-button {
     font-size: 28px;
     width: 103px;
@@ -95,6 +71,10 @@ body {
     background-color: var(--calc);
     color: var(--text);
     z-index: 1;
+}
+
+.calc-button:hover {
+    background-color: rgba(0, 0, 0, 0.03);
 }
 
 .operator {
@@ -119,11 +99,4 @@ body {
 
 .operator:last-child::after {
     background-color: #ff6531;
-}
-
-@media (max-width: 739px) {
-    .container {
-        overflow: hidden;
-        border-radius: 0;
-    }
 }
