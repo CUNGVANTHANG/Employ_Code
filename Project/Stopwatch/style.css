@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-app {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.timer,
+.circle {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    background-color: #000;
+    opacity: 0;
+}
+
+.time {
+    display: flex;
+    position: absolute;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    font-size: 56px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.btn-control,
+.btn-reset,
+.btn-change,
+.btn-mode {
+    font-size: 36px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
