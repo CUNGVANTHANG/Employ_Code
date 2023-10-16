@@ -16,32 +16,59 @@ export default class Stopwatch {
         this.remainingSeconds = 0
 
         this.elements.btnControl.onclick = (e) => {
-            if (this.interval == null) {
+            if (this.interval === null) {
                 this.play()
             }
             else {
                 this.pause()
             }
         }
+
+        this.elements.btnChange.onclick = () => {
+            const changeValue = prompt('Enter number of minutes::')
+                this.pause()
+                this.remainingSeconds = changeValue * 60
+                this.updateInterfaceTime()
+            
+        }
     }
 
     updateInterfaceControl() {
-        if (this.interval == null) {
-                
-            this.elements.btnControl.innerHTML(`<i class="fa-solid fa-play"></i>`)
+        if (this.interval === null) {
+            this.elements.btnControl.innerHTML = `<i class="fa-solid fa-play"></i>`
+        } else {
+            this.elements.btnControl.innerHTML = `<i class="fa-solid fa-pause"></i>`
         }
     }
 
     updateInterfaceTime() {
+        // const hours = Math.floor(this.remainingSeconds / 3600)
+        const minutes = Math.floor(this.remainingSeconds / 60)
+        const seconds = this.remainingSeconds % 60
 
+        // console.log(minutes, seconds)
+        this.elements.seconds.textContent = seconds.toString().padStart(2, "0")
+        this.elements.minutes.textContent = minutes.toString().padStart(2, "0")
+        this.elements.hours.textContent = hours.toString().padStart(2, "0")
     }
 
     play() {
+        if (this.remainingSeconds == 0) return;
+        this.interval = setInterval(() => {
+            this.remainingSeconds--
+            if (this.remainingSeconds == 0) {
+                this.pause()
+            }
+            this.updateInterfaceTime()
+        }, 1000)
 
+        this.updateInterfaceControl()
     }
 
     pause() {
-
+        clearInterval(this.interval)
+        this.interval = null
+        this.updateInterfaceControl()
     }
 
     change() {

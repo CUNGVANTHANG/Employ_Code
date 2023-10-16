@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile Banking Website</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
     <div class="container">
-        <header class="header">
-            <div class="header-left">
-                <div class="header__logo">
-                    <img src="./assets/img/online-banking 1.svg" class="header__logo-img">
-                    <img src="./assets/img/CeloBank.svg" class="header__logo-name">
-                </div>
+      <header class="header">
+        <div class="header-logo">
+          <img src="./assets/img/online-banking 1.svg" />
+          <img src="./assets/img/CeloBank.svg" />
+        </div>
+        <div class="header__navbar-list">
+          <a class="header__navbar-item active"> Home </a>
+          <a class="header__navbar-item"> Products </a>
+          <a class="header__navbar-item"> Features </a>
+          <a class="header__navbar-item"> Blog </a>
+        </div>
+        <button class="header-login">Log in</button>
+        <button class="header-signup">Sign up</button>
+      </header>
 
-                <div class="header__menu">
-                    <a href="#" class="header__menu-active">Home</a>
-                    <a href="#">Products</a>
-                    <a href="#">Features</a>
-                    <a href="#">Blog</a>
-                </div>
+      <section>
+        <div class="row">
+          <div class="col-lg-6 title-left">
+            <h3>Digital Smart Wallet</h3>
+            <h1>Digital <span>Payment</span> For Everyone.</h1>
+            <p>
+              We bring together eveything that's required to build websites and
+              apps that accept payments and send payouts globally. We are the
+              best platform.
+            </p>
+            <div class="title-input">
+                <input type="text" placeholder="Your email address">
+                <button>Get Started</button>
             </div>
-            
-            <div class="header-right">
-                <button class="header__login">Log in</button>
-                <button class="header__signup">Sign up</button>
+            <h4>*We'll respect the inbox and never share your email</h4>
+          </div>
+          <div class="col-lg-5 offset-lg-1 title-right">
+            <img src="./assets/img/Mobile Screen.png" alt="">
+            <div class="deposite">
+              <img src="./assets/img/Group 5304.svg" alt="">
+              <p>Deposite</p>
+              <span>$32000</span>
             </div>
-
-            
-        </header>
-
-        <section>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="inner">Left</div>
-                </div>
-                <div class="col-lg-5 offset-lg-1">
-                    <div class="inner">Right</div>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </div>
-</body>
+  </body>
 </html>
