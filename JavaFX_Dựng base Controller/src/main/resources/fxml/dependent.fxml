@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DependentController">
+   <children>
+      <Text layoutX="175.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEPENDENT MAIN MENU" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="660.0" layoutY="12.0" mnemonicParsing="false" text="Back" />
+      <MenuButton layoutX="148.0" layoutY="86.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="420.0" text="Choose an action">
+        <items>
+          <MenuItem fx:id="retrieveMenuItem" mnemonicParsing="false" text="Retrieve my claims">
+               <graphic>
+                  <Button mnemonicParsing="false" text="Retrieve" />
+               </graphic></MenuItem>
+          <MenuItem fx:id="showMenuItem" mnemonicParsing="false" text="Show my information">
+               <graphic>
+                  <Button mnemonicParsing="false" text="Show" />
+               </graphic></MenuItem>
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

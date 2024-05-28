@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="151.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="POLICY OWNER MAIN MENU" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="660.0" layoutY="12.0" mnemonicParsing="false" text="Back" />
+      <MenuButton layoutX="148.0" layoutY="86.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="420.0" text="Choose an action">
+        <items>
+          <MenuItem mnemonicParsing="false" text="File a claim for a beneficiary">
+               <graphic>
+                  <Button mnemonicParsing="false" text="File" />
+               </graphic></MenuItem>
+          <MenuItem mnemonicParsing="false" text="Update a claim for a beneficiary">
+               <graphic>
+                  <Button mnemonicParsing="false" text="Update" />
+               </graphic></MenuItem>
+            <MenuItem mnemonicParsing="false" text="Delete a claim for a beneficiary">
+               <graphic>
+                  <Button mnemonicParsing="false" text="Delete" />
+               </graphic></MenuItem>
+            <MenuItem mnemonicParsing="false" text="Retrieve claims for a beneficiary">
+               <graphic>
+                  <Button mnemonicParsing="false" text="Retrieve" />
+               </graphic></MenuItem>
+            <MenuItem mnemonicParsing="false" text="Add a beneficiary">
+               <graphic>
+                  <Button mnemonicParsing="false" text="Add" />
+               </graphic></MenuItem>
+            <MenuItem mnemonicParsing="false" text="Update a beneficiary's information">
+               <graphic>
+                  <Button mnemonicParsing="false" text="Update" />
+               </graphic></MenuItem>
+            <MenuItem mnemonicParsing="false" text="Delete a beneficiary">
+               <graphic>
+                  <Button mnemonicParsing="false" text="Delete" />
+               </graphic></MenuItem>
+            <MenuItem mnemonicParsing="false" text="Get all beneficiaries">
+               <graphic>
+                  <Button mnemonicParsing="false" text="Get" />
+               </graphic></MenuItem>
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

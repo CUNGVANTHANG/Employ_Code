@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InsmngRetrieveClaimController">
+   <children>
+      <Text layoutX="233.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RETRIEVE CLAIMS" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="98.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="retrieveBtn" layoutX="318.0" layoutY="429.0" mnemonicParsing="false" text="Retrieve" textAlignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="backBtn" layoutX="660.0" layoutY="12.0" mnemonicParsing="false" text="Back" />
+      <Text layoutX="98.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Customer ID:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="customerId" layoutX="98.0" layoutY="184.0" prefHeight="25.0" prefWidth="522.0" promptText="(leave BLANK for ALL)" />
+      <RadioButton fx:id="approveRadioBtn" layoutX="98.0" layoutY="123.0" mnemonicParsing="false" text="APPROVED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rejectRadioBtn" layoutX="313.0" layoutY="123.0" mnemonicParsing="false" text="REJECTED">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="allRadioBtn" layoutX="569.0" layoutY="123.0" mnemonicParsing="false" text="ALL">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

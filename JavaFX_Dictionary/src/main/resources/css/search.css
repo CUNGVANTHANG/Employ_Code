@@ -1,0 +1,38 @@
+Button {
+    -fx-background-color: none;
+}
+
+.pronunciationBtn,
+.modifyBtn,
+.removeBtn {
+    -fx-scale-x: 0.6 !important;
+    -fx-scale-y: 0.6 !important;
+}
+
+.bookmarkBtn {
+    -fx-scale-x: 0.9 !important;
+    -fx-scale-y: 0.9 !important;
+}
+
+.searchBtn {
+    -fx-scale-x: 0.5 !important;
+    -fx-scale-y: 0.5 !important;
+}
+
+.searchField {
+    -fx-background-color: none;
+}
+
+.searchBox,
+.searchList,
+.searchView,
+.wordEditor {
+    -fx-border-width: 1px;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 4px;
+    -fx-background-color: #fff;
+}
+
+.searchList:focused {
+    -fx-border-color: #ccc;
+}
