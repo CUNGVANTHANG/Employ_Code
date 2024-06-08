@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<students>
+    <student>
+        <name>Nguyễn Văn A</name>
+        <cccd>121215454545</cccd>
+        <registeredLicenseType>B1</registeredLicenseType>
+        <examDate>14/06/2024</examDate>
+        <result>Trượt</result>
+    </student>
+    <student>
+        <name>Đỗ Thị Lan</name>
+        <cccd>45456161</cccd>
+        <registeredLicenseType>B1</registeredLicenseType>
+        <examDate>14/06/2024</examDate>
+        <result>Đỗ</result>
+    </student>
+</students>

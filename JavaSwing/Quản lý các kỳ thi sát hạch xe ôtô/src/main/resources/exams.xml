@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<exams>
+    <exam>
+        <date>08/06/2024</date>
+        <location>Hà Nội</location>
+        <vehicleCount>50</vehicleCount>
+        <licenseType>B1</licenseType>
+        <examForm>Thực hành</examForm>
+    </exam>
+    <exam>
+        <date>08/06/2024</date>
+        <location>Hồ Chí Minh</location>
+        <vehicleCount>40</vehicleCount>
+        <licenseType>B1</licenseType>
+        <examForm>Lý thuyết</examForm>
+    </exam>
+    <exam>
+        <date>14/06/2024</date>
+        <location>Hồ Chí Minh</location>
+        <vehicleCount>80</vehicleCount>
+        <licenseType>B1</licenseType>
+        <examForm>Lý thuyết</examForm>
+    </exam>
+    <exam>
+        <date>08/06/2024</date>
+        <location>Nghệ An</location>
+        <vehicleCount>50</vehicleCount>
+        <licenseType>B2</licenseType>
+        <examForm>Lý thuyết</examForm>
+    </exam>
+    <exam>
+        <date>08/06/2024</date>
+        <location>Nghệ An</location>
+        <vehicleCount>50</vehicleCount>
+        <licenseType>B1</licenseType>
+        <examForm>Lý thuyết</examForm>
+    </exam>
+    <exam>
+        <date>15/06/2024</date>
+        <location>Hồ Chí Minh</location>
+        <vehicleCount>54</vehicleCount>
+        <licenseType>B1</licenseType>
+        <examForm>Thực hành</examForm>
+    </exam>
+    <exam>
+        <date>22/08/2024</date>
+        <location>Hà Nội</location>
+        <vehicleCount>50</vehicleCount>
+        <licenseType>B1</licenseType>
+        <examForm>Thực hành</examForm>
+    </exam>
+    <exam>
+        <date>19/06/2026</date>
+        <location>Hồ Chí Minh</location>
+        <vehicleCount>80</vehicleCount>
+        <licenseType>A2</licenseType>
+        <examForm>Thực hành</examForm>
+    </exam>
+    <exam>
+        <date>08/08/2024</date>
+        <location>Hà Nội</location>
+        <vehicleCount>80</vehicleCount>
+        <licenseType>B1</licenseType>
+        <examForm>Thực hành</examForm>
+    </exam>
+    <exam>
+        <date>15/06/2023</date>
+        <location>Hà Nội</location>
+        <vehicleCount>203</vehicleCount>
+        <licenseType>B1</licenseType>
+        <examForm>Thực hành</examForm>
+    </exam>
+</exams>

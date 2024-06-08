@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ParkingLot>
+    <Vehicle>
+        <LicensePlate>112666</LicensePlate>
+        <EntryTime>19:43:22 03-06-2024</EntryTime>
+        <ExitTime>21:28:14 03-06-2024</ExitTime>
+        <ParkingFee>3000.0</ParkingFee>
+    </Vehicle>
+    <Vehicle>
+        <LicensePlate>1111</LicensePlate>
+        <EntryTime>21:28:17 03-06-2024</EntryTime>
+        <ExitTime>21:28:59 03-06-2024</ExitTime>
+        <ParkingFee>3000.0</ParkingFee>
+    </Vehicle>
+    <Vehicle>
+        <LicensePlate>5555</LicensePlate>
+        <EntryTime>21:28:20 03-06-2024</EntryTime>
+        <ExitTime>21:28:56 03-06-2024</ExitTime>
+        <ParkingFee>3000.0</ParkingFee>
+    </Vehicle>
+    <Vehicle>
+        <LicensePlate>1224</LicensePlate>
+        <EntryTime>21:28:23 03-06-2024</EntryTime>
+        <ExitTime>21:28:57 03-06-2024</ExitTime>
+        <ParkingFee>3000.0</ParkingFee>
+    </Vehicle>
+    <Vehicle>
+        <LicensePlate>11221</LicensePlate>
+        <EntryTime>21:37:24 03-06-2024</EntryTime>
+        <ExitTime>21:38:00 03-06-2024</ExitTime>
+        <ParkingFee>3000.0</ParkingFee>
+    </Vehicle>
+    <Vehicle>
+        <LicensePlate>99E</LicensePlate>
+        <EntryTime>00:47:23 04-06-2024</EntryTime>
+        <ExitTime>20:32:16 04-06-2024</ExitTime>
+        <ParkingFee>5000.0</ParkingFee>
+    </Vehicle>
+    <Vehicle>
+        <LicensePlate>99E164264</LicensePlate>
+        <EntryTime>00:47:23 04-06-2024</EntryTime>
+        <ExitTime>20:06:25 04-06-2024</ExitTime>
+        <ParkingFee>5000.0</ParkingFee>
+    </Vehicle>
+    <Vehicle>
+        <LicensePlate>99E164265</LicensePlate>
+        <EntryTime>00:47:23 04-06-2024</EntryTime>
+        <ExitTime>20:07:51 04-06-2024</ExitTime>
+        <ParkingFee>5000.0</ParkingFee>
+    </Vehicle>
+    <Vehicle>
+        <LicensePlate>99E167894</LicensePlate>
+        <EntryTime>20:32:29 04-06-2024</EntryTime>
+        <ExitTime/>
+        <ParkingFee>0.0</ParkingFee>
+    </Vehicle>
+    <Vehicle>
+        <LicensePlate>99q1929</LicensePlate>
+        <EntryTime>20:32:47 04-06-2024</EntryTime>
+        <ExitTime>20:39:13 04-06-2024</ExitTime>
+        <ParkingFee>3000.0</ParkingFee>
+    </Vehicle>
+</ParkingLot>
