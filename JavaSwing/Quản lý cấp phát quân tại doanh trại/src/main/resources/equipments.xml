@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- equipments.xml -->
+<equipments>
+
+
+    <equipment>
+
+
+        <name>Uniform</name>
+
+
+        <category>Clothing</category>
+
+
+    </equipment>
+
+
+    <equipment>
+
+
+        <name>Boots</name>
+
+
+        <category>Footwear</category>
+
+
+    </equipment>
+
+
+</equipments>

@@ -1,0 +1,20 @@
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\bin\Debug\Hệ thống quản lí kinh doanh bán hàng.exe.config
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\bin\Debug\Hệ thống quản lí kinh doanh bán hàng.exe
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\bin\Debug\Hệ thống quản lí kinh doanh bán hàng.pdb
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\He_thong_kinh_doanh_Pizza.csproj.AssemblyReference.cache
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\He_thong_kinh_doanh_Pizza.csproj.SuggestedBindingRedirects.cache
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\He_thong_kinh_doanh_Pizza.Calam.resources
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\He_thong_kinh_doanh_Pizza.Công_việc.resources
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\He_thong_kinh_doanh_Pizza.Hàng_hóa.resources
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\He_thong_kinh_doanh_Pizza.Hóa_đơn_xuất.resources
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\He_thong_kinh_doanh_Pizza.Nhà_cung_cấp.resources
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\He_thong_kinh_doanh_Pizza.Nhân_viên.resources
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\Hệ_thống_quản_lí_kinh_doanh_bán_hàng.Properties.Resources.resources
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\He_thong_kinh_doanh_Pizza.Thongke.resources
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\He_thong_kinh_doanh_Pizza.Form1.resources
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\He_thong_kinh_doanh_Pizza.Thống_kê.resources
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\He_thong_kinh_doanh_Pizza.Trang_chu.resources
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\He_thong_kinh_doanh_Pizza.csproj.GenerateResource.cache
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\He_thong_kinh_doanh_Pizza.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\Hệ thống quản lí kinh doanh bán hàng.exe
+C:\Users\PC\Downloads\He_thong_quan_li_kinh_doanh_ban_hang\He_thong_quan_li_kinh_doanh_ban_hang\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\Hệ thống quản lí kinh doanh bán hàng.pdb

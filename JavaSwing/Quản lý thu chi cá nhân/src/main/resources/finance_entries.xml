@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<entries>
+    <entry>
+        <isIncome>true</isIncome>
+        <amount>500000.0</amount>
+        <date>21/06/2024</date>
+        <notes>Tiền lương</notes>
+    </entry>
+    <entry>
+        <isIncome>false</isIncome>
+        <amount>20000.0</amount>
+        <date>07/06/2024</date>
+        <notes>Ăn trưa</notes>
+    </entry>
+    <entry>
+        <isIncome>true</isIncome>
+        <amount>1500.0</amount>
+        <date>23/05/2024</date>
+        <notes>Tiền thưởng</notes>
+    </entry>
+    <entry>
+        <isIncome>false</isIncome>
+        <amount>1000.0</amount>
+        <date>21/06/2024</date>
+        <notes>Tiền thuê nhà</notes>
+    </entry>
+    <entry>
+        <isIncome>false</isIncome>
+        <amount>300.0</amount>
+        <date>05/06/2024</date>
+        <notes>Mua quần áo</notes>
+    </entry>
+</entries>

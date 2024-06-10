@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<units>
+
+
+    <unit>
+
+
+        <name>Infantry</name>
+
+
+        <id>1001</id>
+
+
+        <soldierCount>400</soldierCount>
+
+
+    </unit>
+
+
+    <unit>
+
+
+        <name>Hà Nội</name>
+
+
+        <id>1003</id>
+
+
+        <soldierCount>40</soldierCount>
+
+
+    </unit>
+
+
+    <unit>
+        <name>Hải Phòng</name>
+        <id>1002</id>
+        <soldierCount>5000</soldierCount>
+    </unit>
+</units>

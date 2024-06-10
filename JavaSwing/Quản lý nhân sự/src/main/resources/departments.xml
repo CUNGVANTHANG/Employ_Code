@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<departments>
+    <department>
+        <id>PB001</id>
+        <name>Phong IT</name>
+    </department>
+    <department>
+        <id>PB002</id>
+        <name>Phong Nhan Su va Dao Tao</name>
+    </department>
+</departments>

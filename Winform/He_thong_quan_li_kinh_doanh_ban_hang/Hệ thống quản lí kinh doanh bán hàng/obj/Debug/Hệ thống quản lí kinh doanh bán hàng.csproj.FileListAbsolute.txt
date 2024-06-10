@@ -1,0 +1,13 @@
+C:\Users\ACER\source\repos\Hệ thống quản lí kinh doanh bán hàng\Hệ thống quản lí kinh doanh bán hàng\bin\Debug\Hệ thống quản lí kinh doanh bán hàng.exe.config
+C:\Users\ACER\source\repos\Hệ thống quản lí kinh doanh bán hàng\Hệ thống quản lí kinh doanh bán hàng\bin\Debug\Hệ thống quản lí kinh doanh bán hàng.exe
+C:\Users\ACER\source\repos\Hệ thống quản lí kinh doanh bán hàng\Hệ thống quản lí kinh doanh bán hàng\bin\Debug\Hệ thống quản lí kinh doanh bán hàng.pdb
+C:\Users\ACER\source\repos\Hệ thống quản lí kinh doanh bán hàng\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\Hệ thống quản lí kinh doanh bán hàng.csproj.AssemblyReference.cache
+C:\Users\ACER\source\repos\Hệ thống quản lí kinh doanh bán hàng\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\Hệ_thống_quản_lí_kinh_doanh_bán_hàng.Properties.Resources.resources
+C:\Users\ACER\source\repos\Hệ thống quản lí kinh doanh bán hàng\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\Hệ_thống_quản_lí_kinh_doanh_bán_hàng.Form1.resources
+C:\Users\ACER\source\repos\Hệ thống quản lí kinh doanh bán hàng\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\Hệ thống quản lí kinh doanh bán hàng.csproj.GenerateResource.cache
+C:\Users\ACER\source\repos\Hệ thống quản lí kinh doanh bán hàng\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\Hệ thống quản lí kinh doanh bán hàng.csproj.CoreCompileInputs.cache
+C:\Users\ACER\source\repos\Hệ thống quản lí kinh doanh bán hàng\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\Hệ thống quản lí kinh doanh bán hàng.exe
+C:\Users\ACER\source\repos\Hệ thống quản lí kinh doanh bán hàng\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\Hệ thống quản lí kinh doanh bán hàng.pdb
+C:\Users\ACER\source\repos\Hệ thống quản lí kinh doanh bán hàng\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\Hệ_thống_quản_lí_kinh_doanh_bán_hàng.Hàng_hóa.resources
+C:\Users\ACER\source\repos\Hệ thống quản lí kinh doanh bán hàng\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\Hệ_thống_quản_lí_kinh_doanh_bán_hàng.Nhân_viên.resources
+C:\Users\ACER\source\repos\Hệ thống quản lí kinh doanh bán hàng\Hệ thống quản lí kinh doanh bán hàng\obj\Debug\Hệ_thống_quản_lí_kinh_doanh_bán_hàng.Thongke.resources

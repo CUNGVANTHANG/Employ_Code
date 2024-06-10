@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- soldiers.xml -->
+<soldiers>
+
+
+    <soldier>
+
+
+        <fullName>John Doe</fullName>
+
+
+        <id>S12345</id>
+
+
+        <unit>Hải Phòng</unit>
+
+
+        <gender>Male</gender>
+
+
+        <rank>Sergeant</rank>
+
+
+    </soldier>
+
+
+    <soldier>
+
+
+        <fullName>Jane Smith</fullName>
+
+
+        <id>S12346</id>
+
+
+        <unit>Infantry</unit>
+
+
+        <gender>Male</gender>
+
+
+        <rank>Lieutenant</rank>
+
+
+    </soldier>
+
+
+    <soldier>
+
+
+        <fullName>Ngueyenx Văn</fullName>
+
+
+        <id>121515</id>
+
+
+        <unit>Infantry</unit>
+
+
+        <gender>Male</gender>
+
+
+        <rank>Sergeant</rank>
+
+
+    </soldier>
+
+
+</soldiers>

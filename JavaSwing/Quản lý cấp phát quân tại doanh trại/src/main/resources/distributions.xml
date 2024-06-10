@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- distributions.xml -->
+<distributions>
+
+
+    <distribution>
+
+
+        <distributionDate>01/01/2024</distributionDate>
+
+
+        <distributionUnit>Infantry</distributionUnit>
+
+
+        <quantityDistributed>300</quantityDistributed>
+
+
+        <quantityReturned>50</quantityReturned>
+
+
+        <distributionStatus>true</distributionStatus>
+
+
+    </distribution>
+
+
+    <distribution>
+
+
+        <distributionDate>19/06/2025</distributionDate>
+
+
+        <distributionUnit>Infantry</distributionUnit>
+
+
+        <quantityDistributed>200</quantityDistributed>
+
+
+        <quantityReturned>30</quantityReturned>
+
+
+        <distributionStatus>false</distributionStatus>
+
+
+    </distribution>
+
+
+    <distribution>
+
+
+        <distributionDate>01/05/2025</distributionDate>
+
+
+        <distributionUnit>Hà Nội</distributionUnit>
+
+
+        <quantityDistributed>59</quantityDistributed>
+
+
+        <quantityReturned>33</quantityReturned>
+
+
+        <distributionStatus>true</distributionStatus>
+
+
+    </distribution>
+
+
+    <distribution>
+
+
+        <distributionDate>21/06/2024</distributionDate>
+
+
+        <distributionUnit>Hà Nội</distributionUnit>
+
+
+        <quantityDistributed>11</quantityDistributed>
+
+
+        <quantityReturned>5000</quantityReturned>
+
+
+        <distributionStatus>true</distributionStatus>
+
+
+    </distribution>
+
+
+    <distribution>
+
+
+        <distributionDate>20/06/2024</distributionDate>
+
+
+        <distributionUnit>Hà Nội</distributionUnit>
+
+
+        <quantityDistributed>500</quantityDistributed>
+
+
+        <quantityReturned>11</quantityReturned>
+
+
+        <distributionStatus>true</distributionStatus>
+
+
+    </distribution>
+
+
+</distributions>

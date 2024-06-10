@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<employees>
+    <employee>
+        <id>NV001</id>
+        <name>Nguyen Van D</name>
+        <dateOfBirth>27/05/1990</dateOfBirth>
+        <gender>Male</gender>
+        <hometown>Hanoi</hometown>
+        <salary>1500.0</salary>
+        <department>Phong Nhan Su va Dao Tao</department>
+        <position>Truong phong</position>
+    </employee>
+    <employee>
+        <id>NV002</id>
+        <name>Nguyen Van A</name>
+        <dateOfBirth>12/05/1990</dateOfBirth>
+        <gender>Male</gender>
+        <hometown>Hanoi</hometown>
+        <salary>1000.0</salary>
+        <department>IT</department>
+        <position>Developer</position>
+    </employee>
+    <employee>
+        <id>NV004</id>
+        <name>Thansdsds</name>
+        <dateOfBirth>14/06/2024</dateOfBirth>
+        <gender>Female</gender>
+        <hometown>dsdsd</hometown>
+        <salary>23232.0</salary>
+        <department>Phong IT</department>
+        <position>Truong phong</position>
+    </employee>
+</employees>
