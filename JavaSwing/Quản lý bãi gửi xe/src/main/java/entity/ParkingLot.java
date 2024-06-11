@@ -5,9 +5,17 @@ import java.util.List;
 
 public class ParkingLot {
     private List<Vehicle> vehicles;
+    private String id;
+    private String name;
+    private String location;
+    private int vehicleCount;
 
-    public ParkingLot() {
+    public ParkingLot(String id, String name, String location, int vehicleCount) {
         this.vehicles = new ArrayList<>();
+        this.id = id;
+        this.name = name;
+        this.location = location;
+        this.vehicleCount = vehicleCount;
     }
 
     public void addVehicle(Vehicle vehicle) {
@@ -21,7 +29,6 @@ public class ParkingLot {
             }
         }
     }
-
     public Vehicle getVehicle(String licensePlate) {
         for (Vehicle vehicle : vehicles) {
             if (vehicle.getLicensePlate().equalsIgnoreCase(licensePlate)) {
@@ -49,5 +56,40 @@ public class ParkingLot {
         }
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public int getVehicleCount() {
+        return vehicleCount;
+    }
+
+    public void setVehicleCount(int vehicleCount) {
+        this.vehicleCount = vehicleCount;
+    }
+
+    public List<Vehicle> loadAllVehicles() {
+        return XMLHandler.loadAllVehicles();
+    }
 }
 

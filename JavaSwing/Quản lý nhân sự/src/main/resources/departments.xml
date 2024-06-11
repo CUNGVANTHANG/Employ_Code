@@ -6,6 +6,10 @@
     </department>
     <department>
         <id>PB002</id>
-        <name>Phong Nhan Su va Dao Tao</name>
+        <name>Sale</name>
+    </department>
+    <department>
+        <id>PB003</id>
+        <name>A</name>
     </department>
 </departments>

@@ -13,6 +13,13 @@ public class Vehicle {
         this.parkingFee = 0.0;
     }
 
+    public Vehicle(String licensePlate, String entryTime, String exitTime, double parkingFee) {
+        this.licensePlate = licensePlate;
+        this.entryTime = entryTime;
+        this.exitTime = exitTime;
+        this.parkingFee = parkingFee;
+    }
+
     public String getLicensePlate() {
         return licensePlate;
     }

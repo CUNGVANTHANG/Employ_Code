@@ -109,7 +109,8 @@ public class DepartmentView extends JPanel {
                     String id = idField.getText().trim();
                     String name = nameField.getText().trim();
 
-                    if (!departmentController.isDepartmentIdUnique(id)) {
+                    if (departmentController.isDepartmentIdUnique(id)) {
+
                         Department department = new Department(id, name);
 
                         departmentController.addDepartment(department);
@@ -168,15 +169,17 @@ public class DepartmentView extends JPanel {
             String newId = idField.getText().trim();
             String newName = nameField.getText().trim();
 
-            // Create Department objects for old and new data
+            if (!newId.equals(id)) {
+                if (!departmentController.isDepartmentIdUnique(newId)) {
+                    JOptionPane.showMessageDialog(frame, "Department ID already exists. Please use a unique ID.", "Error", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
+            }
+
             Department oldDepartment = new Department(id, name);
             Department newDepartment = new Department(newId, newName);
 
-            // Update department in database or data structure
-            // Call the controller method to update department
             departmentController.editDepartment(oldDepartment, newDepartment);
-
-            // Refresh department table
         }
     }
 

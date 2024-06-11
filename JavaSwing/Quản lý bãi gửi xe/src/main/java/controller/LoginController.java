@@ -6,14 +6,15 @@ import java.awt.event.ActionListener;
 import func.UserFunc;
 import entity.User;
 import view.LoginView;
-import view.ParkingLotManagerUI;
+import view.ParkingLotManagerView;
+import view.ParkingLotView;
 
 import javax.swing.*;
 
 public class LoginController {
     private UserFunc userDao;
     private LoginView loginView;
-    private ParkingLotManagerUI parkingLotManagerUI;
+    private ParkingLotView parkingLotManagerUI;
     
     public LoginController(LoginView view) {
         this.loginView = view;
@@ -35,10 +36,12 @@ public class LoginController {
             User user = loginView.getUser();
             if (userDao.checkUser(user)) {
                 loginView.dispose();
-                // nếu đăng nhập thành công, mở màn hình quản lý bãi đậu xe
-                SwingUtilities.invokeLater(() -> {
-                    ParkingLotManagerUI ui = new ParkingLotManagerUI();
-                    ui.setVisible(true);
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        ParkingLotManagerController controller = new ParkingLotManagerController();
+                        new ParkingLotManagerView(controller).setVisible(true);
+                    }
                 });
             } else {
                 loginView.showMessage("username hoặc password không đúng.");

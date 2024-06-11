@@ -112,14 +112,18 @@ public class PositionView extends JPanel {
             double commission = Double.parseDouble(commissionField.getText().trim());
             double allowance = Double.parseDouble(allowanceField.getText().trim());
 
-            // Create Position object
-            Position newPosition = new Position(id, name, commission, allowance);
+            if (positionController.isPositionIdUnique(id)) {
+                // Create Position object
+                Position newPosition = new Position(id, name, commission, allowance);
 
-            // Add position to database or data structure
-            // Call the controller method to add position
-            positionController.addPosition(newPosition);
+                // Add position to database or data structure
+                // Call the controller method to add position
+                positionController.addPosition(newPosition);
 
-            // Refresh position table
+                // Refresh position table
+            } else {
+                JOptionPane.showMessageDialog(frame, "Position ID already exists. Please use a unique ID.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
         }
     }
 
@@ -158,6 +162,13 @@ public class PositionView extends JPanel {
             String newName = nameField.getText().trim();
             double newCommission = Double.parseDouble(commissionField.getText().trim());
             double newAllowance = Double.parseDouble(allowanceField.getText().trim());
+
+            if (!newId.equals(id)) {
+                if (!positionController.isPositionIdUnique(newId)) {
+                    JOptionPane.showMessageDialog(frame, "Position ID already exists. Please use a unique ID.", "Error", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
+            }
 
             Position oldPosition = new Position(id, name, commission, allowance);
             Position newPosition = new Position(newId, newName, newCommission, newAllowance);

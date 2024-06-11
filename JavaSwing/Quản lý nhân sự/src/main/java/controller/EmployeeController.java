@@ -4,6 +4,10 @@ import entity.Employee;
 import func.EmployeeManager;
 import view.EmployeeView;
 
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 public class EmployeeController {
     private EmployeeManager employeeManager;
     private EmployeeView employeeView;
@@ -15,7 +19,17 @@ public class EmployeeController {
 
     public void loadEmployees() {
         employeeManager.getAllEmployees().clear();
-        employeeView.displayEmployees(employeeManager.getAllEmployees());
+        List<Employee> employees = employeeManager.getAllEmployees();
+
+        // Sắp xếp các nhân viên theo tên
+        Collections.sort(employees, new Comparator<Employee>() {
+            @Override
+            public int compare(Employee e1, Employee e2) {
+                return e1.getName().compareTo(e2.getName());
+            }
+        });
+
+        employeeView.displayEmployees(employees);
     }
 
     public void addEmployee(Employee employee) {

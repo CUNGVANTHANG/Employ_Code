@@ -1,6 +1,9 @@
 package view;
 
 import controller.ParkingLotController;
+import controller.ParkingLotManagerController;
+import entity.ParkingLot;
+import entity.ParkingLotManager;
 import entity.Vehicle;
 import func.ParkingFeeCalculator;
 import utils.DateUtils;
@@ -14,21 +17,19 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.regex.*;
 
 
-public class ParkingLotManagerUI extends JFrame {
+public class ParkingLotView extends JFrame {
     private ParkingLotController controller;
     private DefaultTableModel tableModel;
     private JTextField licensePlateField;
     private JTextField searchField;
 
-    public ParkingLotManagerUI() {
-        controller = new ParkingLotController();
+    public ParkingLotView(ParkingLot parkingLot, String id) {
+        controller = new ParkingLotController(parkingLot);
 
         setTitle("Quản lý bãi đậu xe");
         setSize(800, 600);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
         JPanel panel = new JPanel();
@@ -54,19 +55,19 @@ public class ParkingLotManagerUI extends JFrame {
         licensePlateField = new JTextField(10);
 
         JButton addVehicleButton = new JButton("Thêm");
-        addVehicleButton.addActionListener(e -> addVehicle());
+        addVehicleButton.addActionListener(e -> addVehicle(id));
 
         JButton editVehicleButton = new JButton("Chỉnh sửa");
-        editVehicleButton.addActionListener(e -> editVehicle());
+        editVehicleButton.addActionListener(e -> editVehicle(id));
 
         JButton removeVehicleButton = new JButton("Xóa");
-        removeVehicleButton.addActionListener(e -> removeVehicle());
+        removeVehicleButton.addActionListener(e -> removeVehicle(id));
 
         JButton calculateFeeButton = new JButton("Tính phí");
-        calculateFeeButton.addActionListener(e -> calculateFee());
+        calculateFeeButton.addActionListener(e -> calculateFee(id));
 
         JButton showHistoryButton = new JButton("Danh sách");
-        showHistoryButton.addActionListener(e -> showHistory());
+        showHistoryButton.addActionListener(e -> showHistory(id));
 
         inputPanel.add(licensePlateLabel);
         inputPanel.add(licensePlateField);
@@ -84,7 +85,7 @@ public class ParkingLotManagerUI extends JFrame {
         searchField = new JTextField(10);
 
         JButton searchButton = new JButton("Tìm kiếm");
-        searchButton.addActionListener(e -> searchVehicle());
+        searchButton.addActionListener(e -> searchVehicle(id));
 
         searchPanel.add(searchLabel);
         searchPanel.add(searchField);
@@ -107,7 +108,7 @@ public class ParkingLotManagerUI extends JFrame {
         add(panel);
     }
 
-    private void editVehicle() {
+    private void editVehicle(String id) {
         int selectedRow = getSelectedRow();
         if (selectedRow != -1) {
             String licensePlate = tableModel.getValueAt(selectedRow, 0).toString();
@@ -120,7 +121,7 @@ public class ParkingLotManagerUI extends JFrame {
                 Vehicle oldVehicle = controller.getVehicle(licensePlate, entryTime);
 
                 // Cập nhật thông tin của phương tiện trong cơ sở dữ liệu
-                controller.modifyVehicle(oldVehicle, newLicensePlate);
+                controller.modifyVehicle(oldVehicle, newLicensePlate, id);
 
                 // Cập nhật dữ liệu trong bảng
                 tableModel.setValueAt(newLicensePlate, selectedRow, 0);
@@ -130,8 +131,8 @@ public class ParkingLotManagerUI extends JFrame {
         }
     }
 
-    private void showHistory() {
-        JFrame historyFrame = new JFrame("Danh sách các xe đã đậu");
+    private void showHistory(String id) {
+        JFrame historyFrame = new JFrame("Lịch sử các xe đã đậu");
         historyFrame.setSize(800, 400);
         historyFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         historyFrame.setLocationRelativeTo(this);
@@ -163,7 +164,7 @@ public class ParkingLotManagerUI extends JFrame {
             int selectedRow = historyTable.getSelectedRow();
             if (selectedRow != -1) {
                 String licensePlate = historyTableModel.getValueAt(selectedRow, 0).toString();
-                controller.removeVehicle(licensePlate);
+                controller.removeVehicle(licensePlate, id);
                 historyTableModel.removeRow(selectedRow);
                 // Cập nhật lại tableModel ở cửa sổ chính
                 tableModel.setRowCount(0); // Xóa tất cả các dòng hiện có
@@ -185,7 +186,7 @@ public class ParkingLotManagerUI extends JFrame {
                 String newLicensePlate = JOptionPane.showInputDialog(this, "Nhập biển số xe mới:", licensePlate);
                 if (newLicensePlate != null && !newLicensePlate.isEmpty()) {
                     Vehicle oldVehicle = controller.getVehicle(licensePlate, entryTime);
-                    controller.modifyVehicle(oldVehicle, newLicensePlate);
+                    controller.modifyVehicle(oldVehicle, newLicensePlate, id);
                     historyTableModel.setValueAt(newLicensePlate, selectedRow, 0);
 
                     // Cập nhật lại tableModel ở cửa sổ chính
@@ -209,36 +210,41 @@ public class ParkingLotManagerUI extends JFrame {
         historyFrame.setVisible(true);
     }
 
-    private void addVehicle() {
+    private void addVehicle(String id) {
         String licensePlate = licensePlateField.getText().trim().toUpperCase();
         if (!licensePlate.isEmpty()) {
             // Kiểm tra xem xe đã có thời gian ra hay chưa
+            if (controller.isVehicleCountExceeded(id)) {
+                JOptionPane.showMessageDialog(this, "Số lượng phương tiện đã đạt đến giới hạn.");
+                return;
+            }
+
             if (controller.isVehicleExited(licensePlate)) {
                 String entryTime = DateUtils.getCurrentTime();
                 Vehicle vehicle = new Vehicle(licensePlate, entryTime);
-                controller.addVehicle(vehicle);
+                controller.addVehicle(vehicle, id);
                 tableModel.addRow(new Object[]{licensePlate, entryTime, "", 0.0});
                 licensePlateField.setText("");
             } else {
-                JOptionPane.showMessageDialog(this, "Phương tiện chưa rời bãi đậu xe.");
+                JOptionPane.showMessageDialog(this, "Phương tiện chưa rời bãi đậu xe hoặc đang ở nơi khác.");
             }
         } else {
             JOptionPane.showMessageDialog(this, "Biển số xe không được để trống.");
         }
     }
 
-    private void removeVehicle() {
+    private void removeVehicle(String id) {
         int selectedRow = getSelectedRow();
         if (selectedRow != -1) {
             String licensePlate = tableModel.getValueAt(selectedRow, 0).toString();
-            controller.removeVehicle(licensePlate);
+            controller.removeVehicle(licensePlate, id);
             tableModel.removeRow(selectedRow);
         } else {
             JOptionPane.showMessageDialog(this, "Vui lòng chọn một chiếc xe để loại bỏ.");
         }
     }
 
-    private void calculateFee() {
+    private void calculateFee(String id) {
         int selectedRow = getSelectedRow();
         if (selectedRow != -1) {
             String licensePlate = tableModel.getValueAt(selectedRow, 0).toString();
@@ -251,20 +257,21 @@ public class ParkingLotManagerUI extends JFrame {
             double fee = ParkingFeeCalculator.calculateFee(entryTime, exitTime);
             vehicle.setExitTime(exitTime);
             vehicle.setParkingFee(fee);
-            controller.updateVehicle(vehicle);  // Save the updated vehicle data
+            controller.updateVehicle(vehicle, id);  // Save the updated vehicle data
 
             tableModel.setValueAt(exitTime, selectedRow, 2);
             tableModel.setValueAt(fee, selectedRow, 3);
 
             // Xóa phương tiện khỏi tableModel nhưng không xóa trong XML
             tableModel.removeRow(selectedRow);
+            JOptionPane.showMessageDialog(this, "Xe đã rời khỏi bãi đậu xe");
 
         } else {
             JOptionPane.showMessageDialog(this, "Vui lòng chọn loại xe để tính phí.");
         }
     }
 
-    private void searchVehicle() {
+    private void searchVehicle(String id) {
         String licensePlateRegex = searchField.getText().trim().toUpperCase();
         if (!licensePlateRegex.isEmpty()) {
             // Tạo biểu thức chính quy từ chuỗi nhập vào
@@ -314,7 +321,7 @@ public class ParkingLotManagerUI extends JFrame {
                     int selectedRow = searchResultTable.getSelectedRow();
                     if (selectedRow != -1) {
                         String licensePlate = searchResultTableModel.getValueAt(selectedRow, 0).toString();
-                        controller.removeVehicle(licensePlate);
+                        controller.removeVehicle(licensePlate, id);
                         searchResultTableModel.removeRow(selectedRow);
                         // Cập nhật lại tableModel ở cửa sổ chính
                         tableModel.setRowCount(0); // Xóa tất cả các dòng hiện có
@@ -336,7 +343,7 @@ public class ParkingLotManagerUI extends JFrame {
                         String newLicensePlate = JOptionPane.showInputDialog(this, "Nhập biển số xe mới:", licensePlate);
                         if (newLicensePlate != null && !newLicensePlate.isEmpty()) {
                             Vehicle oldVehicle = controller.getVehicle(licensePlate, entryTime);
-                            controller.modifyVehicle(oldVehicle, newLicensePlate);
+                            controller.modifyVehicle(oldVehicle, newLicensePlate, id);
                             searchResultTableModel.setValueAt(newLicensePlate, selectedRow, 0);
 
                             // Cập nhật lại tableModel ở cửa sổ chính
@@ -377,5 +384,9 @@ public class ParkingLotManagerUI extends JFrame {
     private int getSelectedRow() {
         JTable table = (JTable) tableModel.getTableModelListeners()[0];
         return table.getSelectedRow();
+    }
+
+    public void display() {
+        setVisible(true);
     }
 }

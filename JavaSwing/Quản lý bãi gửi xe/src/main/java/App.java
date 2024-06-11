@@ -1,6 +1,9 @@
 import controller.LoginController;
+import controller.ParkingLotManagerController;
+import entity.ParkingLotManager;
 import view.LoginView;
-import view.ParkingLotManagerUI;
+import view.ParkingLotManagerView;
+import view.ParkingLotView;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,5 +18,13 @@ public class App {
                 controller.showLoginView();
             }
         });
+
+//        SwingUtilities.invokeLater(new Runnable() {
+//            @Override
+//            public void run() {
+//                ParkingLotManagerController controller = new ParkingLotManagerController();
+//                new ParkingLotManagerView(controller).setVisible(true);
+//            }
+//        });
     }
 }

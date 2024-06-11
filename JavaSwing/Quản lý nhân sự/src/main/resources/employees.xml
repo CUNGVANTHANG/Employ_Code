@@ -21,12 +21,22 @@
         <position>Developer</position>
     </employee>
     <employee>
-        <id>NV004</id>
-        <name>Thansdsds</name>
-        <dateOfBirth>14/06/2024</dateOfBirth>
+        <id>NV003</id>
+        <name>Nguyễn Văn F</name>
+        <dateOfBirth>27/06/2024</dateOfBirth>
         <gender>Female</gender>
-        <hometown>dsdsd</hometown>
-        <salary>23232.0</salary>
+        <hometown>Ha noi</hometown>
+        <salary>22222.0</salary>
+        <department>Phong Nhan Su va Dao Tao</department>
+        <position>Truong phong</position>
+    </employee>
+    <employee>
+        <id>NV004</id>
+        <name>A</name>
+        <dateOfBirth>28/06/2024</dateOfBirth>
+        <gender>Female</gender>
+        <hometown>dfdf</hometown>
+        <salary>3434.0</salary>
         <department>Phong IT</department>
         <position>Truong phong</position>
     </employee>
